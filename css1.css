@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.container {
+  position: relative;
+   width:100%;
+  height: 100vh;
+margin: 0 auto;
+  padding: 100px 0;
+  color: white;
+  font-size: 15px;
+
+  
+  
+ 
+ display: flex;
+flex-wrap: wrap;
+
+}
+.section1{
+ margin-left: 50%;
+ position: relative;;
+ z-index: 10;
+}
+[type="radio"]:checked,[type="radio"]:not(:checked){
+  visibility: hidden;
+  position: absolute;
+}
+.colorbtn:checked + label,
+.colorbtn:not(:checked) + label{
+  height: 40px;
+  width: 40px;
+ box-shadow: 0 12px 35px 2px rgba(16, 39, 112, 0.25);
+ margin: 1rem;
+ cursor: pointer;
+ border: 3px solid transparent;
+ background-position: center;
+  background-size: cover;
+}
+ 
+
+.first{
+  background-image: url(./Images/color1.jpg);
+
+}
+.second{
+  background-image: url(./Images/color2.jpg);
+
+}
+.third{
+  background-image: url(./Images/color3.jpg);
+}
+.four{
+  background-image: url(./Images/color4.jpg);
+}
+.five{
+  background-image: url(./Images/color5.jpg);
+}
+
+.six{
+  background-image: url(./Images/color6.jpg);
+}
+.colorbtn:checked + label{
+  transform: scale(1.1);
+  border-color: #434343;
+}
+
+.img{
+ height: 400px;
+ width: 500px;
+ background-image: url(./Images/chair1.png);
+ position: absolute;
+ top: 3rem;
+
+z-index: 9;
+transition: all 550ms linear;
+  transition: delay 1ms; ;
+ 
+  opacity: 0;
+  display: inline-block;
+  
+}
+.color1:checked ~ .img1{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.img2{
+  background-image: url(./Images/chair2.png);
+}
+.color2:checked ~ .img2{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.img3{
+  background-image: url(./Images/chair3.png);
+}
+.color3:checked ~ .img3{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.img4{
+  background-image: url(./Images/chair4.png);
+}
+.color4:checked ~ .img4{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.img5{
+  background-image: url(./Images/chair5.png);
+}
+.color5:checked ~ .img5{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.img6{
+  background-image: url(./Images/chair6.png);
+}
+.color6:checked ~ .img6{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0) rotate(-1deg);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0) rotate(2deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0) rotate(-3deg);
+  }
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0) rotate(3deg);
+  }
+}
+.back{
+ position:absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+  height: 100%;
+  
+ z-index: -10;
+}
+
+
+.color1:checked ~ .back.f{
+  background-color: #944852;
+}
+.color2:checked ~ .back.s{
+  background-color: #1a1a1a;
+}
+.color3:checked ~ .t{
+  background-color: #40566e;
+}
+
+.color4:checked ~ .fr{
+  background-color: #5e89b2;
+}
+.color5:checked ~ .fi{
+  background-color: #8c7f76;
+}
+.color6:checked ~ .si{
+  background-color: #5d6160;
+}
+.modern{
+  
+  
+  
+height: 50px;
+width:fit-content;
+
+padding: 1rem ;
+box-shadow: 0 6px 15px 0 rgb(0, 1, 2);
+transition: all 250ms linear;
+
+}
+.bot{
+  text-decoration: none;
+  color:red;
+  opacity: 1;
+}
+.modern:hover{
+  transform: scale(1.1);
+}
+.section2{
+  position: relative;
+  height: 50%;
+  width: 50%;
+  z-index: 20;
+  
+}
+.l{
+  opacity: 0;
+}
+
+.desc:checked ~ .lorem{
+  opacity: 1;
+}
+.detai:checked ~ .number{
+  opacity: 1;
+}
+.number{
+  display: flex;
+  padding: 10px;
+  position: absolute
+  ;
+  top: 50px;
+  left: 0;
+}
+.a{
+  position: relative;
+  
+ left: 50%;
+}
+.lorem{
+ padding-top: 30px;
+}
+.modern{
+  position: relative;
+  top:5rem;
+  left: 33%;
+}
